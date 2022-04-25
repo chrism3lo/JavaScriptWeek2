@@ -7,16 +7,35 @@
 // variable containing information about whether Tom has a higher BMI than Jerry. Print a string to the
 // console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
 
-tomHeight = 9; // inches
-tomMass = 8; // grams
-jerryHeight = 10; //inches
-jerryMass = 45; // grams
+// tomHeight = 9; // inches
+// tomMass = 8; // grams
+// jerryHeight = 10; //inches
+// jerryMass = 45; // grams
 
-function bMI(a,b){
-    return a/(b*b);
-}
+// function bMI(a,b){
+//     return a/(b*b);
+// }
 
-tomBMI = bMI(tomMass,tomHeight);
-jerryBMI = bMI(jerryMass,jerryHeight);
-console.log(`Is Tom's BMI higher than Jerry's? ${tomBMI > jerryBMI}`);
+// tomBMI = bMI(tomMass,tomHeight);
+// jerryBMI = bMI(jerryMass,jerryHeight);
+// console.log(`Is Tom's BMI higher than Jerry's? ${tomBMI > jerryBMI}`);
+
+let tom ={
+    height: 9,
+    weight: 8,
+    bmi: function(){
+        return this.weight/(this.height * this.height)
+    }
+};
+
+let jerry ={
+    height: 10,
+    weight: 45,
+    bmi: function(){
+        return this.weight/(this.height * this.height)
+    }
+};
+
+console.log(`Is Tom's BMI higher than Jerry's? ${tom.bmi > jerry.bmi}`);
+
 

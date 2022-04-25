@@ -8,4 +8,4 @@ let student2 = ["Alex", "Barrera", 22];
 let student3 = ["Donovan", "Bowman", 24];
 let allStudents = [student1, student2, student3];
 
- console.log(`Hello, my name is ${allStudents[0][0]} ${allStudents[0][1]} and I'm ${allStudents[0][2]} years old.`);
+ console.log(`Hello, my name is ${allStudents[1][0]} ${allStudents[1][1]} and I'm ${allStudents[1][2]} years old.`);
